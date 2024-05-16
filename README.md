@@ -27,9 +27,9 @@ Este é o código-fonte do meu portfólio pessoal, que mostra meus trabalhos, in
 
 ## Contato
 - **Nome:** Alexandre Barrio
-- **GitHub:** [GitHub Profile](http://github.com/alexandrebarrio)
-- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/alexandre-barrio-95b029302/)
-- **E-mail:** [e-mail] (dev.alexandrebarrio@gmail.com)
+- **GitHub:** http://github.com/alexandrebarrio
+- **LinkedIn:** https://www.linkedin.com/in/alexandre-barrio-95b029302/
+- **E-mail:** dev.alexandrebarrio@gmail.com
 
 ## Licença
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
