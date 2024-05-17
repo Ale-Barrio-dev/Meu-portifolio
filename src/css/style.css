@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    position: relative;
     background-color: rgb(34, 193, 195);
     background: linear-gradient(0deg, #004E92 0%, #000428 100%);
     color: aliceblue;
@@ -24,7 +25,7 @@ body {
 }
 
 .wrapper a {
-    color: white
+    color: white;
 }
 
 .wrapper .icon {
@@ -42,7 +43,7 @@ body {
     flex-direction: column;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: all 0.2s4 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .wrapper .icon:hover span {
@@ -50,7 +51,7 @@ body {
 }
 
 .github {
-    --color: #333333
+    --color: #333333;
 }
 
 .email {
@@ -65,7 +66,6 @@ body {
     background: var(--color);
     color: white;
 }
-
 
 .container-header {
     display: flex;
@@ -129,25 +129,25 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    row-gap: 3rem;
 }
 
 .div-iframe {
-    width: 84vw;
-    height: auto;
-    margin: auto;
-    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
     border-radius: 0.4rem;
     background-color: rgb(255, 166, 0);
 }
 
 .container-iframe {
-display: flex;
-justify-content: center;
-align-items: center;
-} 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-#smartphone {    
+#smartphone {
     background-image: url('/src/image/smartphone02.png');
     background-repeat: no-repeat;
     width: 162px;
@@ -171,7 +171,7 @@ iframe#screen-smartphone {
     height: 230px;
 }
 
-iframe#screen-notebook{
+iframe#screen-notebook {
     position: relative;
     width: 179px;
     height: 108px;
@@ -217,6 +217,20 @@ iframe#screen-notebook{
     font-size: 2rem;
 }
 
+#arrowUp {
+        font-size: 2.8rem;
+        cursor: pointer;
+        color: aliceblue;
+        position: absolute;
+        right: 1rem;
+        bottom: 6rem;
+    }
+
+#arrowUp:hover {
+    color: #ffffffab;
+    transition: 0.2s;
+}
+
 footer {
     max-width: 100vw;
     height: 90px;
@@ -230,6 +244,39 @@ footer small {
     justify-content: center;
     font-size: medium;
     padding: 2rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        #smartphone {
+            background-size: contain;
+            width: 110px;
+            height: 230px;
+            margin-bottom: 1rem;
+        }
+    
+        iframe#screen-smartphone {
+            width: 95px;
+            height: 200px;
+            top: 9px;
+            left: 6px;
+        }
+
+        #notebook {
+            background-size: contain;
+            width: 200px;
+            height: 180px;
+        }
+    
+        iframe#screen-notebook {
+            width: 128px;
+            height: 75px;
+            top: 25px;
+            left: 27px;
+        }
+    }
+    
 }
 
 @media screen and (min-width: 992px) and (max-width: 1215px) {
@@ -291,10 +338,9 @@ footer small {
     .container-about-me {
         max-width: 85vw;
     }
-
 }
 
-@media screen and (min-width: 1216px) and (max-width:1919px) {
+@media screen and (min-width: 1216px) and (max-width: 1919px) {
     .wrapper {
         position: fixed;
         width: 100%;
@@ -310,7 +356,6 @@ footer small {
         font-size: 1.5rem;
     }
    
-
     .container-header {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -364,6 +409,4 @@ footer small {
     .container-about-me {
         max-width: 85vw;
     }
-
-
 }
