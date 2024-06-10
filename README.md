@@ -31,5 +31,3 @@ Este é o código-fonte do meu portfólio pessoal, que mostra meus trabalhos, in
 - **LinkedIn:** https://www.linkedin.com/in/alexandre-barrio-95b029302/
 - **E-mail:** dev.alexandrebarrio@gmail.com
 
-## Licença
-Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
